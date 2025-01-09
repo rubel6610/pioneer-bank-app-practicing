@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Pioneer Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <main id="Home-page">
+      <div id="login-area"
+        class="container d-flex justify-content-center align-items-center  flex-column vh-100"
+      >
+        <form action="" class="text-center">
+          <h4 class="mb-3">Welcome To Pioneer Bank</h4>
+
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              placeholder="Email"
+              class="form-control border border-secondary" required
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              class="form-control border border-secondary"
+              placeholder="Password" required
+            />
+            <label for="password">Password</label>
+          </div>
+        </form>
+        <button id="login-btn" class="btn btn-success">Login</button>
+      </div>
+    </main>
+    <section class="second-section mb-3">
+      <h3 class="bg-primary text-center p-3 ">Welcome To Pioneer Bank</h3>
+      
+      <div class="row d-flex justify-content-evenly mb-4">
+          <div class="deposit-box box-status col-md-2 bg-primary ">
+            <h4>Deposit</h4>
+            <h3 >$ <span id="total-deposit">00</span> </h3>
+          </div>
+        <div class="witdraw-box box-status col-md-2 bg-danger  ">
+            <h4>Withdraw</h4>
+            <h3>$ <span id="total-withdraw" >00</span> </h3>
+        </div>
+        <div class="balance-box box-status  col-md-2 bg-warning  ">
+            <h4>Current Balance</h4>
+            <h3>$ <span id="Current-balance" >00</span> </h3>
+        </div>
+      </div>
+      <div class="deposit-option row d-flex justify-content-evenly">
+        <div class="col-md-4 box-shadow">
+          <h4>Deposit</h4>
+          <input type="number" name="" id="deposit-amount" class="form-control border-secondary w-75 " placeholder="$ amount you want to Deposit"> <br>
+          <button type="submit" class="btn btn-success deposit-btn">Deposit</button>
+        </div>
+        <div class="col-md-4 box-shadow">
+          <h4>Withdraw</h4>
+        <input type="number" name="" id="withdraw-amount" class="form-control border-secondary w-75" placeholder="$ amount you want to Withdraw"> <br>
+        <button type="submit" class="btn btn-success withdraw-btn">Withdraw</button>
+        </div>
+        
+      </div>
+   
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
