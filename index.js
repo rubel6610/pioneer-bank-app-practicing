@@ -51,6 +51,7 @@ withdrawBtn.addEventListener("click", ()=>{
     
     }else{
         alert("Your balance is not sufficient at the moment! Please deposit your account for further Transaction! Thank you for staying with Us")
+        document.querySelector('#withdraw-amount').value = "";
     }
     
 })
